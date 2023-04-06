@@ -31,13 +31,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/tkoenig97/stardew-companion-app">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/stardewchicken.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Stardew Canyon? (WIP)</h3>
+<h3 align="center">Stardew Companion</h3>
 
   <p align="center">
-    A companion site for Stardew Valley players
+    A companion site for Stardew Valley farmers
     <br />
     <a href="https://github.com/tkoenig97/stardew-companion-app"><strong>Explore the docs »</strong></a>
     <br />
@@ -72,7 +72,6 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -83,11 +82,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -105,7 +104,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
+<!-- This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -132,14 +131,14 @@ This is an example of how to list things you need to use the software and how to
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This website is intended to act as a companion for the game Stardew Valley. It can keep track of the user's progress and help them plan how they will spend their days in-game.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -150,10 +149,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- User account creation and sign in
+- Calendar for NPC birthdays and village events
+- 100% checklist
+    - Checklist progress saves to each user account
+    - Users can have multiple checklists divided between each farm they have
 
 See the [open issues](https://github.com/tkoenig97/stardew-companion-app/issues) for a full list of proposed features (and known issues).
 
@@ -174,15 +174,6 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
