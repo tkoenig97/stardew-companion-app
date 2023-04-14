@@ -94,6 +94,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 * [![Vite][Vitejs.dev]][Vite-url]
 * [![React][React.js]][React-url]
+* [![TailwindCSS][Tailwindcss.com]][Tailwindcss-url]
 * [![Django][Djangoproject.com]][Django-url]
 * [![PostgreSQL][PostgreSQL.org]][PostgreSQL-url]
 
@@ -226,3 +227,5 @@ Project Link: [https://github.com/tkoenig97/stardew-companion-app](https://githu
 [Django-url]: https://www.djangoproject.com/
 [PostgreSQL.org]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
 [PostgreSQL-url]: https://www.postgresql.org/
+[Tailwindcss.com]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwindcss-url]: https://tailwindcss.com/
