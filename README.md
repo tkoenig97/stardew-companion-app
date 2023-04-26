@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tkoenig97/stardew-companion-app">
-    <img src="images/stardewchicken.png" alt="Logo" width="80" height="80">
+    <img src="src/assets/images/stardewchicken.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Stardew Companion</h3>
