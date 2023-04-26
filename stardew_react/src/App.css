@@ -1,14 +1,22 @@
+/* index.html */
+body,
+html {
+    background: #0a0523 url('src/assets/images/stardewbackground.png') no-repeat
+        fixed center center / cover;
+}
+
+/* NavBar.jsx */
 .navbar {
-  display: flex;
-  border: 5px solid #BF7C2A;
-  border-radius: 1em;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1%;
-  background-color: #FFD284;
+    display: flex;
+    border: 5px solid #bf7c2a;
+    border-radius: 1em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #ffd284;
 }
 
 .navimg {
-  max-width: 75px;
-  border-radius: 1em;
+    max-width: 75px;
+    border-radius: 1em;
 }

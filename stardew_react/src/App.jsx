@@ -5,10 +5,10 @@ import './App.css'
 function App() {
 
   return (
-    <>
-    <Navbar />
-    <Outlet />
-    </>
+    <div className='app'>
+      <Navbar />
+      <Outlet />
+    </div>
   )
 }
 
