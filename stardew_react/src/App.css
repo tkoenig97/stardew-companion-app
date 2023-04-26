@@ -1,10 +1,11 @@
 .navbar {
   display: flex;
-  border: 3px solid black;
+  border: 5px solid #BF7C2A;
   border-radius: 1em;
   justify-content: space-between;
   align-items: center;
   padding: 1%;
+  background-color: #FFD284;
 }
 
 .navimg {
