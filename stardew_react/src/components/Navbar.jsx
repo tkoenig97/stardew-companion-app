@@ -8,7 +8,7 @@ export const Navbar = () => {
             <Link to={'/'}>Page 1</Link>
             <Link to={'/'}>Page 2</Link>
             <Link to={'/'}>Page 3</Link>
-            <Link to={'/'}>Sign-In/Sign-Up</Link>
+            <Link to={'/signin'}>Sign-In/Sign-Up</Link>
             <form>
                 <input name="search" placeholder="Search"></input>
                 <button className='submit-button' type="submit">Search</button>
