@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export const Navbar = () => {
     return (
-        <div className="navbar">
+        <div className="menu navbar">
             <img className="navimg" src="src/assets/images/stardewchicken.png" />
             <Link to={'/'}>Home</Link>
             <Link to={'/'}>Page 1</Link>

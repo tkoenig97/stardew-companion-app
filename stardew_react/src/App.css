@@ -5,18 +5,27 @@ html {
         fixed center center / cover;
 }
 
-/* NavBar.jsx */
-.navbar {
+.menu {
     display: flex;
     border: 5px solid #bf7c2a;
     border-radius: 1em;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
     background-color: #ffd284;
+    align-items: center;
+}
+
+/* NavBar.jsx */
+.navbar {
+    justify-content: space-between;
+    padding: 1%;
 }
 
 .navimg {
     max-width: 75px;
     border-radius: 1em;
+}
+
+/* IndexPage.jsx */
+.index {
+    justify-content: center;
+    margin: 10%;
 }
