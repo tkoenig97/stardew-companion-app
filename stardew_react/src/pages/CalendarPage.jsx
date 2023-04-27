@@ -1,4 +1,4 @@
-import { DayCell } from "../components/DayCell"
+import { SeasonalCalendar } from "../components/SeasonalCalendar"
 
 export const CalendarPage = () => {
     return (
@@ -8,8 +8,8 @@ export const CalendarPage = () => {
                 <h1>Spring</h1>
                 <button>Right Button</button>
             </div>
-            <div>
-                <DayCell />
+            <div className="calendar">
+                <SeasonalCalendar />
             </div>
         </div>
     )

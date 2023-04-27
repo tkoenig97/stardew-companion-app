@@ -1,7 +1,7 @@
-export const DayCell = ({ index }) => {
+export const DayCell = ({ day }) => {
     return (
         <div className="cell">
-            <div className="day-number">{index + 1}</div>
+            <div className="day-number">{day}</div>
         </div>
     );
 };
