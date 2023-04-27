@@ -1,6 +1,6 @@
 export const SignUpPage = () => {
     return (
-        <div className="menu index">
+        <div className="menu page-content">
             <div className="signin">
                 <h1>Sign Up:</h1>
                 <form>

@@ -5,7 +5,7 @@ export const Navbar = () => {
         <div className="menu navbar">
             <img className="navimg" src="src/assets/images/brownchicken.png" />
             <Link to={'/'}>Home</Link>
-            <Link to={'/'}>Page 1</Link>
+            <Link to={'/calendar'}>Seasonal Calendar</Link>
             <Link to={'/'}>Page 2</Link>
             <Link to={'/'}>Page 3</Link>
             <Link to={'/signin'}>Sign-In/Sign-Up</Link>
