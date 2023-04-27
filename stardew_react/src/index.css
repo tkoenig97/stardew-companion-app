@@ -19,8 +19,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
+p {
+  font-size: 1.5em;
+}
+
 a {
   font-weight: 500;
+  font-size: 1.5em;
   color: #646cff;
   text-decoration: inherit;
 }
