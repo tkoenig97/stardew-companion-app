@@ -44,6 +44,7 @@ html {
     border: 2px solid black;
     background-color: #FBEBC2;
     transition: background-color 0.2s, box-shadow 0.2s;
+    position: relative;
 }
 
 .cell:hover {
@@ -51,6 +52,13 @@ html {
     box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
+.number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
 
 /* CalendarPage.jsx */
 .calendar-header {
