@@ -2,7 +2,9 @@ import { DayCell } from './DayCell';
 
 export const SeasonalCalendar = () => {
     // Generate an array of 28 DayCell components
-    const daysArray = Array.from({ length: 28 }, (_, i) => <DayCell day={i + 1} />);
+    const daysArray = Array.from({ length: 28 }, (_, i) => (
+        <DayCell day={i + 1} />
+    ));
 
     // Split the array into weeks of 7
     const calendarWeeks = Array.from({ length: 4 }, (_, i) =>
@@ -10,8 +12,8 @@ export const SeasonalCalendar = () => {
     );
 
     return (
-        <div>
-            <div className='days-label'>
+        <div className="calendar">
+            <div className="days-label">
                 <h3>M</h3>
                 <h3>T</h3>
                 <h3>W</h3>

@@ -8,7 +8,7 @@ export const CalendarPage = () => {
                 <h1>Spring</h1>
                 <button>Right Button</button>
             </div>
-            <div className="calendar">
+            <div>
                 <SeasonalCalendar />
             </div>
         </div>

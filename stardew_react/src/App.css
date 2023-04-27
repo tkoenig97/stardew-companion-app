@@ -46,6 +46,7 @@ html {
     transition: background-color 0.2s, box-shadow 0.2s;
     position: relative;
     box-sizing: border-box;
+    user-select: none;
 }
 
 .cell:hover {
@@ -71,6 +72,13 @@ html {
   }
 
 /* SeasonalCalendar.jsx */
+.calendar {
+    margin: 5%;
+    border: 2px solid #63453a;
+    color: #704649;
+    background-color: #fbebc2;
+}
+
 .calendar-row {
     display: flex;
 }
@@ -90,11 +98,4 @@ html {
     margin-top: 25px;
     width: 100%;
     color: #704649;
-}
-
-.calendar {
-    margin: 5%;
-    border: 2px solid #63453a;
-    color: #704649;
-    background-color: #fbebc2;
 }
