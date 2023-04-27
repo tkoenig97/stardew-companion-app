@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/tkoenig97/stardew-companion-app">
-    <img src="src/assets/images/stardewchicken.png" alt="Logo" width="80" height="80">
+    <img src="stardew_react/src/assets/images/brownchicken.png" alt="Logo" width="100" height="80">
   </a>
 
 <h3 align="center">Stardew Companion</h3>
@@ -194,7 +194,7 @@ Project Link: [https://github.com/tkoenig97/stardew-companion-app](https://githu
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* Gabe Dehner --- Custom Artwork: 
 * []()
 * []()
 

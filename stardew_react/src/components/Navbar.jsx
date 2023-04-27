@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export const Navbar = () => {
     return (
         <div className="menu navbar">
-            <img className="navimg" src="src/assets/images/brownboi.png" />
+            <img className="navimg" src="src/assets/images/brownchicken.png" />
             <Link to={'/'}>Home</Link>
             <Link to={'/'}>Page 1</Link>
             <Link to={'/'}>Page 2</Link>

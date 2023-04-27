@@ -27,7 +27,9 @@ html {
 /* IndexPage.jsx */
 .index {
     justify-content: center;
-    margin: 10%;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* SignInPage */
