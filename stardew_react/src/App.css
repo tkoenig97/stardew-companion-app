@@ -38,7 +38,7 @@ html {
     align-items: center;
 }
 
-/* CalendarCell.jsx */
+/* DayCell.jsx */
 .cell {
     width: 10vw;
     height: 10vw;
@@ -69,7 +69,14 @@ html {
     text-align: center;
     font-size: 10vw;
     pointer-events: none;
-  }
+}
+
+.cell-img {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    max-width: 8vw;
+}
 
 /* SeasonalCalendar.jsx */
 .calendar {
