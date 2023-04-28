@@ -1,4 +1,4 @@
-import Kent from '../src/assets/images/kent-calendar-sprite.jpg'
+import Kent from '../src/assets/images/kent-calendar-sprite.png'
 
 export const getSeasonalData = ({ season }) => {
     const seasonalData = {
