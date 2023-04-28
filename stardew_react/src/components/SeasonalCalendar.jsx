@@ -1,9 +1,21 @@
+import { useEffect, useState } from 'react';
 import { DayCell } from './DayCell';
+import { getSeasonalData } from '../utilities';
+import { capitalizeFirstLetter } from '../utilities';
 
 export const SeasonalCalendar = () => {
+    const [currSeason, setCurrSeason] = useState('spring');
+    const [seasonalData, setSeasonalData] = useState(
+        getSeasonalData({ season: currSeason })
+    );
+
+    useEffect(() => {
+        setSeasonalData(getSeasonalData({ season: currSeason }));
+    }, [currSeason]);
+
     // Generate an array of 28 DayCell components
     const daysArray = Array.from({ length: 28 }, (_, i) => (
-        <DayCell day={i + 1} />
+        <DayCell day={i + 1} data={seasonalData} />
     ));
 
     // Split the array into weeks of 7
@@ -11,11 +23,13 @@ export const SeasonalCalendar = () => {
         daysArray.slice(i * 7, (i + 1) * 7)
     );
 
+    console.log(seasonalData);
+
     return (
         <>
             <div className="calendar-header">
                 <button>Left Button</button>
-                <h1>Spring</h1>
+                <h1>{capitalizeFirstLetter(currSeason)}</h1>
                 <button>Right Button</button>
             </div>
             <div className="calendar">
