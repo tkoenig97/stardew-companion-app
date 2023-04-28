@@ -12,21 +12,28 @@ export const SeasonalCalendar = () => {
     );
 
     return (
-        <div className="calendar">
-            <div className="days-label">
-                <h3>M</h3>
-                <h3>T</h3>
-                <h3>W</h3>
-                <h3>Th</h3>
-                <h3>F</h3>
-                <h3>Sa</h3>
-                <h3>Su</h3>
+        <>
+            <div className="calendar-header">
+                <button>Left Button</button>
+                <h1>Spring</h1>
+                <button>Right Button</button>
             </div>
-            {calendarWeeks.map((chunk, index) => (
-                <div className="calendar-row" key={index}>
-                    {chunk}
+            <div className="calendar">
+                <div className="days-label">
+                    <h3>M</h3>
+                    <h3>T</h3>
+                    <h3>W</h3>
+                    <h3>Th</h3>
+                    <h3>F</h3>
+                    <h3>Sa</h3>
+                    <h3>Su</h3>
                 </div>
-            ))}
-        </div>
+                {calendarWeeks.map((week, index) => (
+                    <div className="calendar-row" key={index}>
+                        {week}
+                    </div>
+                ))}
+            </div>
+        </>
     );
 };
