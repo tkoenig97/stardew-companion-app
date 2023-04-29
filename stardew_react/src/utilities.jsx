@@ -1,8 +1,8 @@
+import Flag from '../src/assets/images/calendar/calendar-flag.png'
 import Vincent from '../src/assets/images/calendar/calendar-vincent.png'
 import Caroline from '../src/assets/images/calendar/calendar-vincent.png'
 import Kent from '../src/assets/images/calendar/calendar-kent.png'
 // import Lewis from '../src/assets/images/calendar/calendar-lewis.png'
-import Event from '../src/assets/images/calendar/calendar-flag.png'
 import Haley from '../src/assets/images/calendar/calendar-haley.png'
 import Pam from '../src/assets/images/calendar/calendar-pam.png'
 import Shane from '../src/assets/images/calendar/calendar-shane.png'
@@ -40,11 +40,11 @@ export const getSeasonalData = ({ season }) => {
             4: Kent,
             7: 'Lewis',
             10: Vincent,
-            13: Event,
+            13: Flag,
             14: Haley,
             18: Pam,
             20: Shane,
-            24: Event,
+            24: Flag,
             26: 'Pierre',
             27: Emily,
         },
@@ -52,13 +52,13 @@ export const getSeasonalData = ({ season }) => {
             4: Jas,
             8: 'Gus',
             10: Maru,
-            11: Event,
+            11: Flag,
             13: Alex,
             17: Sam,
             19: Demetrius,
             22: 'Dwarf',
             24: 'Willy',
-            29: Event,
+            29: Flag,
         },
         fall: {
             2: 'Penny',
@@ -66,23 +66,23 @@ export const getSeasonalData = ({ season }) => {
             11: Jodi,
             13: Abigail,
             15: 'Sandy',
-            16: Event,
+            16: Flag,
             18: Marnie,
             21: Robin,
             24: George,
-            27: Event,
+            27: Flag,
         },
         winter: {
             1: Krobus,
             3: Linus,
             7: Caroline,
-            8: Event,
+            8: Flag,
             10: Sebastian,
             14: Harvey,
             17: Wizard,
             20: Evelyn,
             23: Leah,
-            25: Event,
+            25: Flag,
             26: Clint,
         },
     };

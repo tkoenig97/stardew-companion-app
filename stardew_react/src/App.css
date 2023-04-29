@@ -81,8 +81,12 @@ html {
 .cell-img {
     position: absolute;
     bottom: 0;
-    left: 30%;
-    max-width: 8vw;
+    left: 40%;
+    min-width: 4vw;
+}
+
+.calendar-flag {
+    padding-bottom: 25%;
 }
 
 /* SeasonalCalendar.jsx */
