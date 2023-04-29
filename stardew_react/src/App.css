@@ -19,6 +19,12 @@ html {
     margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
+    max-width: 5000px;
+    max-height: 5000px;
+}
+
+.index-img {
+    padding-bottom: 50px;
 }
 
 /* NavBar.jsx */
@@ -28,7 +34,8 @@ html {
 }
 
 .navimg {
-    max-width: 115px;
+    max-width: 60px;
+    padding-left: 1%;
 }
 
 /* SignInPage */
@@ -84,6 +91,8 @@ html {
     border: 2px solid #63453a;
     color: #704649;
     background-color: #fbebc2;
+    max-width: 5000px;
+    max-height: 5000px;
 }
 
 .calendar-row {
