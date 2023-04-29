@@ -63,8 +63,9 @@ html {
 
 .day-number {
     position: absolute;
-    left: 5px;
-    font-size: 2.5vw;
+    top: -12px;
+    left: 6px;
+    font-size: 4vw;
     font-weight: bold;
 }
 
@@ -87,6 +88,8 @@ html {
 
 .calendar-flag {
     padding-bottom: 25%;
+    left: 30%;
+    min-width: 4.5vw;
 }
 
 .calendar-star {
