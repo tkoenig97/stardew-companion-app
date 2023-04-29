@@ -24,14 +24,13 @@
 
 /* NavBar.jsx */
 .navbar {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1%;
 }
 
 .navimg {
-    max-width: 60px;
-    padding-left: 1%;
-    min-width: 3vw;
+    height: 40px;
+    max-width: 100%; /* to maintain aspect ratio */
 }
 
 .nav-link {
