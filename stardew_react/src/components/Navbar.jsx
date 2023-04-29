@@ -1,20 +1,76 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     return (
         <div className="menu navbar">
             <Link to={'/'}>
-                <img
-                    className="navimg"
-                    src="src/assets/images/green-junimo.png"
-                />
+                <div className="nav-link">
+                    <img
+                        className="navimg"
+                        src="src/assets/images/green-junimo.png"
+                    />
+                    <h2 className="nav-label">Home</h2>
+                </div>
             </Link>
-            <Link to={'/calendar'}>| Seasonal Calendar |</Link>
-            <Link to={'/gifts'}>NPC Gifts |</Link>
-            <Link to={'/'}>Farming |</Link>
-            <Link to={'/'}>Livestock |</Link>
-            <Link to={'/'}>Recipes |</Link>
-            <Link to={'/signin'}>Sign-In/Sign-Up</Link>
+            <Link to={'/calendar'}>
+                <div className="nav-link">
+                    <img
+                        className="navimg"
+                        src="src/assets/images/calendar.png"
+                    />
+                    <h2 className="nav-label">Calendar</h2>
+                </div>
+            </Link>
+            <Link to={'/gifts'}><div className="nav-link">
+                    <img
+                        className="navimg"
+                        src="src/assets/images/brown-chicken.png"
+                    />
+                    <h2 className="nav-label">NPC Gifts</h2>
+                </div></Link>
+            <Link to={'/calendar'}>
+                <div className="nav-link">
+                    <img
+                        className="navimg"
+                        src="src/assets/images/parsnip.png"
+                    />
+                    <h2 className="nav-label">Farming</h2>
+                </div>
+            </Link>
+            <Link to={'/calendar'}>
+                <div className="nav-link">
+                    <img
+                        className="navimg"
+                        src="src/assets/images/white-cow.png"
+                    />
+                    <h2 className="nav-label">Livestock</h2>
+                </div>
+            </Link>
+            <Link to={'/calendar'}>
+                <div className="nav-link">
+                    <img
+                        className="navimg"
+                        src="src/assets/images/burger.png"
+                    />
+                    <h2 className="nav-label">Recipes</h2>
+                </div>
+            </Link>
+            <Link to={'/'}>
+                <div className="nav-link">
+                    <img
+                        className="navimg"
+                        src="src/assets/images/community-center.png"
+                    />
+                    <h2 className="nav-label">Bundles</h2>
+                </div>
+            </Link>
+            <Link to={'/signin'}><div className="nav-link">
+                    <img
+                        className="navimg"
+                        src="src/assets/images/brown-chicken.png"
+                    />
+                    <h2 className="nav-label">Sign-In</h2>
+                </div></Link>
             <form>
                 <input name="search" placeholder="Search"></input>
                 <button className="submit-button" type="submit">
@@ -24,3 +80,4 @@ export const Navbar = () => {
         </div>
     );
 };
+

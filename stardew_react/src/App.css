@@ -31,6 +31,26 @@
 .navimg {
     max-width: 60px;
     padding-left: 1%;
+    min-width: 3vw;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link:hover {
+    background-color: #e6d89f;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav-label {
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    line-height: 0;
+    color: #704649;
 }
 
 /* SignInPage */
