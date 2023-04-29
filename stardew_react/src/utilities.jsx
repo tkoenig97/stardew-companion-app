@@ -1,11 +1,11 @@
-import Kent from '../src/assets/images/kent-calendar-sprite.png'
+import Vincent from '../src/assets/images/calendar-vincent.png'
 
 export const getSeasonalData = ({ season }) => {
     const seasonalData = {
         spring: {
-            4: Kent,
+            4: 'Kent',
             7: 'Lewis',
-            10: 'Vincent',
+            10: Vincent,
             13: 'Event',
             14: 'Haley',
             18: 'Pam',

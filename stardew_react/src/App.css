@@ -1,7 +1,7 @@
 /* index.html */
 body,
 html {
-    background: #0a0523 url('src/assets/images/stardewbackground.png') no-repeat
+    background: #0a0523 url('src/assets/images/stardew-background.png') no-repeat
         fixed center center / cover;
 }
 
