@@ -14,19 +14,29 @@ export const DayCell = ({ day, data }) => {
     return (
         <div className="cell" onClick={handleClick}>
             <div className="day-number">{day}</div>
-            {calendarImg && (
-                <img
-                    className={`cell-img ${
-                        calendarImg === Flag
-                            ? 'calendar-flag'
-                            : calendarImg === Star
-                            ? 'calendar-star'
-                            : ''
-                    }`}
-                    src={calendarImg}
-                    alt={data[day]}
-                />
-            )}
+            {calendarImg &&
+                (Array.isArray(calendarImg) ? (
+                    <>
+                        <img
+                            className="cell-img calendar-star"
+                            src={Star}
+                            alt={data[day]}
+                        />
+                        <img
+                            className="cell-img"
+                            src={calendarImg[1]}
+                            alt={data[day]}
+                        />
+                    </>
+                ) : (
+                    <img
+                        className={`cell-img ${
+                            calendarImg === Star ? 'calendar-star' : ''
+                        } ${calendarImg === Flag ? 'calendar-flag' : ''}`}
+                        src={calendarImg}
+                        alt={data[day]}
+                    />
+                ))}
             {checkedOff && <div className="x-mark">X</div>}
         </div>
     );
