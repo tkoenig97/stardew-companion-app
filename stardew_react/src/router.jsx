@@ -4,6 +4,7 @@ import App from "./App";
 import { SignInPage } from "./pages/SignInPage";
 import { SignUpPage } from "./pages/SignUpPage";
 import { CalendarPage } from "./pages/CalendarPage";
+import { NpcGiftPage } from "./pages/NpcGiftPage";
 
 const Router = createBrowserRouter ([
     {
@@ -25,6 +26,10 @@ const Router = createBrowserRouter ([
             {
                 path: '/calendar',
                 element: <CalendarPage />
+            },
+            {
+                path:'/gifts',
+                element: <NpcGiftPage />
             }
         ]
     }
