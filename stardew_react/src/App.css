@@ -89,6 +89,13 @@ html {
     padding-bottom: 25%;
 }
 
+.calendar-star {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    min-width: 2.5vw;
+}
+
 /* SeasonalCalendar.jsx */
 .calendar {
     margin: 5%;

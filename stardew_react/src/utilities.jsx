@@ -1,4 +1,5 @@
 import Flag from '../src/assets/images/calendar/calendar-flag.png'
+import Star from '../src/assets/images/calendar/calendar-star.png'
 import Vincent from '../src/assets/images/calendar/calendar-vincent.png'
 import Caroline from '../src/assets/images/calendar/calendar-vincent.png'
 import Kent from '../src/assets/images/calendar/calendar-kent.png'
@@ -79,7 +80,9 @@ export const getSeasonalData = ({ season }) => {
             8: Flag,
             10: Sebastian,
             14: Harvey,
-            17: Wizard,
+            15: Star,
+            16: Star,
+            17: [Star, Wizard],
             20: Evelyn,
             23: Leah,
             25: Flag,
