@@ -1,6 +1,7 @@
-@font-face {
-  font-family: 'Stardew Valley';
-  src: url('src/assets/fonts/Stardew_Valley.ttf');
+body,
+html {
+    background: #0a0523 url('src/assets/images/stardew-background.png') no-repeat
+        fixed center center / cover;
 }
 
 :root {

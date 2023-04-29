@@ -1,10 +1,4 @@
 /* index.html */
-body,
-html {
-    background: #0a0523 url('src/assets/images/stardew-background.png') no-repeat
-        fixed center center / cover;
-}
-
 .menu {
     display: flex;
     border: 5px solid #bf7c2a;
