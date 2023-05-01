@@ -26,30 +26,35 @@ export const IndexPage = () => {
                     Try the game for yourself:
                     <a
                         className="index-links"
+                        target="_blank"
                         href="https://store.steampowered.com/app/413150/Stardew_Valley/"
                     >
                         Steam
                     </a>
                     <a
                         className="index-links"
+                        target="_blank"
                         href="https://www.gog.com/game/stardew_valley"
                     >
                         GOG
                     </a>
                     <a
                         className="index-links"
+                        target="_blank"
                         href="https://www.playstation.com/en-us/games/stardew-valley-ps4/"
                     >
                         Playstation
                     </a>
                     <a
                         className="index-links"
+                        target="_blank"
                         href="https://www.xbox.com/en-us/games/store/stardew-valley/c3d891z6tnqm"
                     >
                         Xbox
                     </a>
                     <a
                         className="index-links"
+                        target="_blank"
                         href="https://www.nintendo.com/games/detail/stardew-valley-switch/"
                     >
                         Switch
@@ -57,12 +62,14 @@ export const IndexPage = () => {
                 </div>
                 <a
                     className="index-links"
+                    target="_blank"
                     href="https://twitter.com/ConcernedApe"
                 >
                     Follow the Developer on Twitter
                 </a>
                 <a
                     className="index-links"
+                    target="_blank"
                     href="https://github.com/tkoenig97/stardew-companion-app"
                 >
                     Check us out on Github
