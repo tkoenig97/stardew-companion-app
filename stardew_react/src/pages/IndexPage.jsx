@@ -12,14 +12,13 @@ export const IndexPage = () => {
             <p className="index-paragraph">
                 Welcome to Stardew Central! Our site is designed to provide you
                 with all the tools and information you need to become a
-                successful farmer in Stardew Valley. From a comprehensive
-                calendar that shows all the important events throughout the
-                year, to a database of villagers' likes and dislikes, and
-                information on every crop, foragable, and animal product in the
-                game, we've got you covered. Our goal is to make your time in
-                Stardew Valley as efficient and enjoyable as possible, by
-                providing you with all the information you need in one
-                convenient location.
+                successful farmer in Stardew Valley. Our resources include a
+                comprehensive calendar of all important in-game events, as well
+                as a database of villagers' likes and dislikes, and detailed
+                information on every crop, forageable, and animal product. Our
+                goal is to make your time in Stardew Valley as efficient and
+                enjoyable as possible, by providing you with all the information
+                you need in one convenient location.
             </p>
             <Link to={'/signin'}>Sign in to get started</Link>
             <footer>
