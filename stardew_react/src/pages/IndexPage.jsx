@@ -22,43 +22,46 @@ export const IndexPage = () => {
                 convenient location.
             </p>
             <Link to={'/signin'}>Sign in to get started</Link>
-            <div className="store-links">
-                Try the game for yourself:
-                <a
-                    className="index-links"
-                    href="https://store.steampowered.com/app/413150/Stardew_Valley/"
-                >
-                    Steam
-                </a>
-                <a
-                    className="index-links"
-                    href="https://www.gog.com/game/stardew_valley"
-                >
-                    GOG
-                </a>
-                <a
-                    className="index-links"
-                    href="https://www.playstation.com/en-us/games/stardew-valley-ps4/"
-                >
-                    Playstation
-                </a>
-                <a
-                    className="index-links"
-                    href="https://www.xbox.com/en-us/games/store/stardew-valley/c3d891z6tnqm"
-                >
-                    Xbox
-                </a>
-                <a
-                    className="index-links"
-                    href="https://www.nintendo.com/games/detail/stardew-valley-switch/"
-                >
-                    Switch
-                </a>
-            </div>
-            <a className="index-links" href="https://twitter.com/ConcernedApe">
-                Follow the Developer on Twitter
-            </a>
             <footer>
+                <div className="store-links">
+                    Try the game for yourself:
+                    <a
+                        className="index-links"
+                        href="https://store.steampowered.com/app/413150/Stardew_Valley/"
+                    >
+                        Steam
+                    </a>
+                    <a
+                        className="index-links"
+                        href="https://www.gog.com/game/stardew_valley"
+                    >
+                        GOG
+                    </a>
+                    <a
+                        className="index-links"
+                        href="https://www.playstation.com/en-us/games/stardew-valley-ps4/"
+                    >
+                        Playstation
+                    </a>
+                    <a
+                        className="index-links"
+                        href="https://www.xbox.com/en-us/games/store/stardew-valley/c3d891z6tnqm"
+                    >
+                        Xbox
+                    </a>
+                    <a
+                        className="index-links"
+                        href="https://www.nintendo.com/games/detail/stardew-valley-switch/"
+                    >
+                        Switch
+                    </a>
+                </div>
+                <a
+                    className="index-links"
+                    href="https://twitter.com/ConcernedApe"
+                >
+                    Follow the Developer on Twitter
+                </a>
                 <a
                     className="index-links"
                     href="https://github.com/tkoenig97/stardew-companion-app"
