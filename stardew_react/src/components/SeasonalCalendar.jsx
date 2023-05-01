@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { DayCell } from './DayCell';
 import { getSeasonalData } from '../utilities';
 import { capitalizeFirstLetter } from '../utilities';
@@ -10,6 +10,17 @@ export const SeasonalCalendar = () => {
     const [seasonalData, setSeasonalData] = useState(
         getSeasonalData({ season: currSeason })
     );
+    
+    // Use useMemo to memoize the checkedOff state of each DayCell
+    const [checkedOffStates, setCheckedOffStates] = useState(
+        Array.from({ length: 28 }, () => false)
+    );
+    const checkedOff = useMemo(() => checkedOffStates, [checkedOffStates]);
+
+    // Reset the checkedOff state of each DayCell when currSeasonIndex changes
+    useEffect(() => {
+        setCheckedOffStates(Array.from({ length: 28 }, () => false));
+    }, [currSeasonIndex]);
 
     useEffect(() => {
         setSeasonalData(getSeasonalData({ season: currSeason }));
@@ -35,7 +46,18 @@ export const SeasonalCalendar = () => {
 
     // Generate an array of 28 DayCell components
     const daysArray = Array.from({ length: 28 }, (_, i) => (
-        <DayCell day={i + 1} data={seasonalData} />
+        <DayCell
+            day={i + 1}
+            data={seasonalData}
+            checkedOff={checkedOff[i]}
+            setCheckedOff={(value) =>
+                setCheckedOffStates((prev) => {
+                    const newState = [...prev];
+                    newState[i] = value;
+                    return newState;
+                })
+            }
+        />
     ));
 
     // Split the array into weeks of 7

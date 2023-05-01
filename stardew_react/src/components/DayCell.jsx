@@ -2,8 +2,7 @@ import { useState } from 'react';
 import Flag from '../assets/images/calendar/calendar-flag.png';
 import Star from '../assets/images/calendar/calendar-star.png';
 
-export const DayCell = ({ day, data }) => {
-    const [checkedOff, setCheckedOff] = useState(false);
+export const DayCell = ({ day, data, checkedOff, setCheckedOff }) => {
 
     const handleClick = () => {
         setCheckedOff(!checkedOff);
