@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const IndexPage = () => {
     return (
         <div className="menu page-content">
@@ -15,6 +17,7 @@ export const IndexPage = () => {
                 possible, by providing you with all the information you need in
                 one convenient location.
             </p>
+            <Link to={'/signin'}>Sign in to get started</Link>
             <footer>Check us out on <a className="github-link" href="https://github.com/tkoenig97/stardew-companion-app">Github</a></footer>
         </div>
     );
