@@ -10,11 +10,11 @@ export const SeasonalCalendar = () => {
     const [seasonalData, setSeasonalData] = useState(
         getSeasonalData({ season: currSeason })
     );
-    
-    // Use useMemo to memoize the checkedOff state of each DayCell
     const [checkedOffStates, setCheckedOffStates] = useState(
         Array.from({ length: 28 }, () => false)
     );
+
+    // Use useMemo to memoize the checkedOff state of each DayCell
     const checkedOff = useMemo(() => checkedOffStates, [checkedOffStates]);
 
     // Reset the checkedOff state of each DayCell when currSeasonIndex changes

@@ -3,7 +3,6 @@ import Flag from '../assets/images/calendar/calendar-flag.png';
 import Star from '../assets/images/calendar/calendar-star.png';
 
 export const DayCell = ({ day, data, checkedOff, setCheckedOff }) => {
-
     const handleClick = () => {
         setCheckedOff(!checkedOff);
     };
