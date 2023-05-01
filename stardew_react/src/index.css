@@ -77,3 +77,21 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.menu {
+  display: flex;
+  border: 5px solid #bf7c2a;
+  border-radius: 1em;
+  background-color: #ffd284;
+  align-items: center;
+}
+
+.page-content {
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 5000px;
+  max-height: 5000px;
+}
