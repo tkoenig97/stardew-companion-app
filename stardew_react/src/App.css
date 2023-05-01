@@ -17,9 +17,18 @@
     max-height: 5000px;
 }
 
-/* placeholder */
 .index-img {
-    padding-bottom: 50px;
+    max-width: 50px;
+}
+
+.index-paragraph {
+    text-indent: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.github-link {
+    font-size: medium;
 }
 
 /* NavBar.jsx */
