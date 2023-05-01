@@ -20,6 +20,7 @@
 
 .store-links {
     display: flex;
+    align-items: center;
 }
 
 /* NavBar.jsx */
