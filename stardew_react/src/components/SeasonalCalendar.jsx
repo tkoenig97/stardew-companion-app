@@ -44,21 +44,27 @@ export const SeasonalCalendar = () => {
         );
     };
 
+    // Remove dayCell checks when season changes
+    const resetCheckedOffState = (index, value) => {
+        setCheckedOffStates((prev) => {
+            const newState = [...prev];
+            newState[index] = value;
+            return newState;
+        });
+    };
+
     // Generate an array of 28 DayCell components
-    const daysArray = Array.from({ length: 28 }, (_, i) => (
-        <DayCell
-            day={i + 1}
-            data={seasonalData}
-            checkedOff={checkedOff[i]}
-            setCheckedOff={(value) =>
-                setCheckedOffStates((prev) => {
-                    const newState = [...prev];
-                    newState[i] = value;
-                    return newState;
-                })
-            }
-        />
-    ));
+    const daysArray = Array.from({ length: 28 }, (_, i) => {
+        const checkedOffValue = checkedOffStates[i];
+        return (
+            <DayCell
+                day={i + 1}
+                data={seasonalData}
+                checkedOff={checkedOffValue}
+                setCheckedOff={(value) => resetCheckedOffState(i, value)}
+            />
+        );
+    });
 
     // Split the array into weeks of 7
     const calendarWeeks = Array.from({ length: 4 }, (_, i) =>
