@@ -2,6 +2,7 @@ body,
 html {
     background: #0a0523 url('src/assets/images/stardew-background.png') no-repeat
         fixed center center / cover;
+        color: #704649;
 }
 
 :root {

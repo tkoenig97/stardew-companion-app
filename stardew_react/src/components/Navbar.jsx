@@ -28,7 +28,7 @@ export const Navbar = () => {
                     />
                     <h2 className="nav-label">NPC Gifts</h2>
                 </div></Link>
-            <Link to={'/calendar'}>
+            <Link to={'/farming'}>
                 <div className="nav-link">
                     <img
                         className="navimg"
@@ -37,7 +37,7 @@ export const Navbar = () => {
                     <h2 className="nav-label">Farming</h2>
                 </div>
             </Link>
-            <Link to={'/calendar'}>
+            <Link to={'/livestock'}>
                 <div className="nav-link">
                     <img
                         className="navimg"
@@ -46,7 +46,7 @@ export const Navbar = () => {
                     <h2 className="nav-label">Livestock</h2>
                 </div>
             </Link>
-            <Link to={'/calendar'}>
+            <Link to={'/recipes'}>
                 <div className="nav-link">
                     <img
                         className="navimg"
@@ -55,7 +55,7 @@ export const Navbar = () => {
                     <h2 className="nav-label">Recipes</h2>
                 </div>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/bundles'}>
                 <div className="nav-link">
                     <img
                         className="navimg"
