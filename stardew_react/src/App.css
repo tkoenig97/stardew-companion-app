@@ -9,8 +9,17 @@
     padding-right: 5%;
 }
 
-.github-link {
-    font-size: medium;
+.index-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+.store-links {
+    display: flex;
 }
 
 /* NavBar.jsx */
