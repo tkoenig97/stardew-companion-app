@@ -1,23 +1,29 @@
-import { useEffect, useState } from "react"
-import { villagerData } from "../utilities"
+import { useEffect, useState } from 'react';
+import { villagerData } from '../utilities';
 
 export const NpcGiftPage = () => {
-    const villagerImages = []
-    const [currentVillager, setCurrentVillager] = useState('Default')
+    const [currentVillager, setCurrentVillager] = useState('Default');
 
     const handleVillagerChange = (event) => {
-        setCurrentVillager(event.target.alt)
-    }
+        setCurrentVillager(event.target.alt);
+    };
 
     useEffect(() => {
-        console.log(currentVillager)
-    }, [currentVillager])
+        console.log(currentVillager);
+    }, [currentVillager]);
 
-    for (const villager in villagerData) {
-        villagerImages.push(
-            <img onClick={handleVillagerChange} className="navimg" key={villager} src={villagerData[villager].image} alt={villager} />
-        )
-    }
+    const villagerImages = Object.keys(villagerData)
+        .sort((a, b) => a.localeCompare(b))
+        .map((villager) => (
+            <img
+                onClick={handleVillagerChange}
+                className="navimg"
+                key={villager}
+                src={villagerData[villager].image}
+                alt={villager}
+            />
+        ));
+        
     return (
         <div className="menu page-content">
             <h1>NPC Gifts</h1>
@@ -26,5 +32,5 @@ export const NpcGiftPage = () => {
                 <div>{villagerImages}</div>
             </div>
         </div>
-    )
-}
+    );
+};
