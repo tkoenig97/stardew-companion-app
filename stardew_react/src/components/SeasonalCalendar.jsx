@@ -13,6 +13,9 @@ export const SeasonalCalendar = () => {
     const [checkedOffStates, setCheckedOffStates] = useState(
         Array.from({ length: 28 }, () => false)
     );
+    const [checkedOffSeasonalStates, setCheckedOffSeasonalStates] = useState(
+        seasons.reduce((acc, season) => ({ ...acc, [season]: [] }), {})
+    );
 
     // Use useMemo to memoize the checkedOff state of each DayCell
     const checkedOff = useMemo(() => checkedOffStates, [checkedOffStates]);
@@ -45,10 +48,10 @@ export const SeasonalCalendar = () => {
     };
 
     // Remove dayCell checks when season changes
-    const resetCheckedOffState = (index, value) => {
-        setCheckedOffStates((prev) => {
-            const newState = [...prev];
-            newState[index] = value;
+    const resetCheckedOffSeasonalState = (season, index) => {
+        setCheckedOffSeasonalStates((prev) => {
+            const newState = { ...prev };
+            newState[season][index] = false;
             return newState;
         });
     };
@@ -56,12 +59,28 @@ export const SeasonalCalendar = () => {
     // Generate an array of 28 DayCell components
     const daysArray = Array.from({ length: 28 }, (_, i) => {
         const checkedOffValue = checkedOffStates[i];
+        const seasonalCheckedOff = checkedOffSeasonalStates[currSeason][i];
         return (
             <DayCell
+                key={i}
                 day={i + 1}
                 data={seasonalData}
-                checkedOff={checkedOffValue}
-                setCheckedOff={(value) => resetCheckedOffState(i, value)}
+                checkedOff={checkedOffValue || seasonalCheckedOff}
+                setCheckedOff={(value) => {
+                    setCheckedOffStates((prev) => {
+                        const newState = [...prev];
+                        newState[i] = value;
+                        return newState;
+                    });
+                    setCheckedOffSeasonalStates((prev) => {
+                        const newState = { ...prev };
+                        newState[currSeason][i] = value;
+                        return newState;
+                    });
+                }}
+                resetCheckedOff={() =>
+                    resetCheckedOffSeasonalState(currSeason, i)
+                }
             />
         );
     });

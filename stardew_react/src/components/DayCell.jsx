@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Flag from '../assets/images/calendar/calendar-flag.png';
 import Star from '../assets/images/calendar/calendar-star.png';
 
@@ -16,7 +15,7 @@ export const DayCell = ({ day, data, checkedOff, setCheckedOff }) => {
                 (Array.isArray(calendarImg) ? (
                     <>
                         <img
-                            className="cell-img calendar-star"
+                            className="calendar-star"
                             src={Star}
                             alt={data[day]}
                         />
