@@ -1,11 +1,21 @@
+import { useEffect, useState } from "react"
 import { villagerData } from "../utilities"
 
 export const NpcGiftPage = () => {
     const villagerImages = []
+    const [currentVillager, setCurrentVillager] = useState('Default')
+
+    const handleVillagerChange = (event) => {
+        setCurrentVillager(event.target.alt)
+    }
+
+    useEffect(() => {
+        console.log(currentVillager)
+    }, [currentVillager])
 
     for (const villager in villagerData) {
         villagerImages.push(
-            <img className="navimg" key={villager} src={villagerData[villager].image} alt={villager} />
+            <img onClick={handleVillagerChange} className="navimg" key={villager} src={villagerData[villager].image} alt={villager} />
         )
     }
     return (
