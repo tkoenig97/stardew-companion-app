@@ -142,3 +142,22 @@
     margin-top: 25px;
     width: 100%;
 }
+
+/* NpcGiftPage */
+.villager-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.villager-selector img {
+    padding: 1.2%;
+}
+
+.villager-selector img:hover {
+    background-color: #e6d89f;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
