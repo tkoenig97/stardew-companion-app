@@ -94,4 +94,6 @@ button:focus-visible {
   margin-right: 10%;
   max-width: 5000px;
   max-height: 5000px;
+  padding-left: 5%;
+  padding-right: 5%;
 }

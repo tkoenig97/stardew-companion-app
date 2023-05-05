@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { villagerData } from '../utilities';
+import { VillagerGiftPanel } from './VillagerGiftPanel';
 
 export const VillagerSelector = () => {
-    const [currentVillager, setCurrentVillager] = useState('Default');
+    const [currentVillager, setCurrentVillager] = useState();
 
     const handleVillagerChange = (event) => {
         setCurrentVillager(event.target.alt);
@@ -23,10 +24,14 @@ export const VillagerSelector = () => {
                 alt={villager}
             />
         ));
+
     return (
         <div className="menu villager-selector">
             <h2>Select the Villager You Wish to View</h2>
             <div>{villagerImages}</div>
+            {currentVillager && (
+                <VillagerGiftPanel currentVillager={currentVillager} />
+            )}
         </div>
     );
 };
