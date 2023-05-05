@@ -143,7 +143,7 @@
     width: 100%;
 }
 
-/* NpcGiftPage */
+/* VillagerSelector.jsx */
 .villager-selector {
     display: flex;
     flex-wrap: wrap;
@@ -161,3 +161,5 @@
     background-color: #e6d89f;
     box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
+
+/* NpcGiftPanel.jsx */

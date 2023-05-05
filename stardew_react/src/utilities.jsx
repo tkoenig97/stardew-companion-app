@@ -97,207 +97,207 @@ export const villagerData = {
             season: 'spring',
             day: 4,
         },
-        image: CalendarKent,
+        calendarSprite: CalendarKent,
     },
     Lewis: {
         birthday: {
             season: 'spring',
             day: 7,
         },
-        image: CalendarLewis,
+        calendarSprite: CalendarLewis,
     },
     Vincent: {
         birthday: {
             season: 'spring',
             day: 10,
         },
-        image: CalendarVincent,
+        calendarSprite: CalendarVincent,
     },
     Haley: {
         birthday: {
             season: 'spring',
             day: 14,
         },
-        image: CalendarHaley,
+        calendarSprite: CalendarHaley,
     },
     Pam: {
         birthday: {
             season: 'spring',
             day: 18,
         },
-        image: CalendarPam,
+        calendarSprite: CalendarPam,
     },
     Shane: {
         birthday: {
             season: 'spring',
             day: 20,
         },
-        image: CalendarShane,
+        calendarSprite: CalendarShane,
     },
     Pierre: {
         birthday: {
             season: 'spring',
             day: 26,
         },
-        image: CalendarPierre,
+        calendarSprite: CalendarPierre,
     },
     Emily: {
         birthday: {
             season: 'spring',
             day: 27,
         },
-        image: CalendarEmily,
+        calendarSprite: CalendarEmily,
     },
     Jas: {
         birthday: {
             season: 'summer',
             day: 4,
         },
-        image: CalendarJas,
+        calendarSprite: CalendarJas,
     },
     Gus: {
         birthday: {
             season: 'summer',
             day: 8,
         },
-        image: CalendarGus,
+        calendarSprite: CalendarGus,
     },
     Maru: {
         birthday: {
             season: 'summer',
             day: 10,
         },
-        image: CalendarMaru,
+        calendarSprite: CalendarMaru,
     },
     Alex: {
         birthday: {
             season: 'summer',
             day: 13,
         },
-        image: CalendarAlex,
+        calendarSprite: CalendarAlex,
     },
     Sam: {
         birthday: {
             season: 'summer',
             day: 17,
         },
-        image: CalendarSam,
+        calendarSprite: CalendarSam,
     },
     Demetrius: {
         birthday: {
             season: 'summer',
             day: 19,
         },
-        image: CalendarDemetrius,
+        calendarSprite: CalendarDemetrius,
     },
     Dwarf: {
         birthday: {
             season: 'summer',
             day: 22,
         },
-        image: CalendarDwarf,
+        calendarSprite: CalendarDwarf,
     },
     Willy: {
         birthday: {
             season: 'summer',
             day: 24,
         },
-        image: CalendarWilly,
+        calendarSprite: CalendarWilly,
     },
     Penny: {
         birthday: {
             season: 'fall',
             day: 2,
         },
-        image: CalendarPenny,
+        calendarSprite: CalendarPenny,
     },
     Elliott: {
         birthday: {
             season: 'fall',
             day: 5,
         },
-        image: CalendarElliott,
+        calendarSprite: CalendarElliott,
     },
     Jodi: {
         birthday: {
             season: 'fall',
             day: 11,
         },
-        image: CalendarJodi,
+        calendarSprite: CalendarJodi,
     },
     Abigail: {
         birthday: {
             season: 'fall',
             day: 13,
         },
-        image: CalendarAbigail,
+        calendarSprite: CalendarAbigail,
     },
     Sandy: {
         birthday: {
             season: 'fall',
             day: 15,
         },
-        image: CalendarSandy,
+        calendarSprite: CalendarSandy,
     },
     Marnie: {
         season: 'fall',
         day: 18,
-        image: CalendarMarnie,
+        calendarSprite: CalendarMarnie,
     },
     Robin: {
         season: 'fall',
         day: 21,
-        image: CalendarRobin,
+        calendarSprite: CalendarRobin,
     },
     George: {
         season: 'fall',
         day: 24,
-        image: CalendarGeorge,
+        calendarSprite: CalendarGeorge,
     },
     Krobus: {
         season: 'winter',
         day: 1,
-        image: CalendarKrobus,
+        calendarSprite: CalendarKrobus,
     },
     Linus: {
         season: 'winter',
         day: 3,
-        image: CalendarLinus,
+        calendarSprite: CalendarLinus,
     },
     Caroline: {
         season: 'winter',
         day: 7,
-        image: CalendarCaroline,
+        calendarSprite: CalendarCaroline,
     },
     Sebastian: {
         season: 'winter',
         day: 10,
-        image: CalendarSebastian,
+        calendarSprite: CalendarSebastian,
     },
     Harvey: {
         season: 'winter',
         day: 14,
-        image: CalendarHarvey,
+        calendarSprite: CalendarHarvey,
     },
     Wizard: {
         season: 'winter',
         day: 17,
-        image: CalendarWizard,
+        calendarSprite: CalendarWizard,
     },
     Evelyn: {
         season: 'winter',
         day: 20,
-        image: CalendarEvelyn,
+        calendarSprite: CalendarEvelyn,
     },
     Leah: {
         season: 'winter',
         day: 23,
-        image: CalendarLeah,
+        calendarSprite: CalendarLeah,
     },
     Clint: {
         season: 'winter',
         day: 26,
-        image: CalendarClint,
+        calendarSprite: CalendarClint,
     },
 };
 

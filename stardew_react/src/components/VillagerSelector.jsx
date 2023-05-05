@@ -19,7 +19,7 @@ export const VillagerSelector = () => {
                 onClick={handleVillagerChange}
                 className="navimg"
                 key={villager}
-                src={villagerData[villager].image}
+                src={villagerData[villager].calendarSprite}
                 alt={villager}
             />
         ));
