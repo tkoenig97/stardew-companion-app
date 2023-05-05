@@ -26,12 +26,16 @@ export const VillagerSelector = () => {
         ));
 
     return (
-        <div className="menu villager-selector">
-            <h2>Select the Villager You Wish to View</h2>
-            <div>{villagerImages}</div>
-            {currentVillager && (
-                <VillagerGiftPanel currentVillager={currentVillager} />
-            )}
-        </div>
+        <>
+            <div className="menu villager-selector">
+                <h2>Select the Villager You Wish to View</h2>
+                <div>{villagerImages}</div>
+            </div>
+            <div>
+                {currentVillager && (
+                    <VillagerGiftPanel currentVillager={currentVillager} />
+                )}
+            </div>
+        </>
     );
 };

@@ -161,3 +161,12 @@
 }
 
 /* NpcGiftPanel.jsx */
+.gift-panel {
+    position: relative;
+}
+
+.villager-pic {
+    border: 2px solid #63453a;
+    display: block;
+    box-sizing: border-box;
+}

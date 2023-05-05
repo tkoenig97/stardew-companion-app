@@ -4,7 +4,7 @@ export const VillagerGiftPanel = ({ currentVillager = 'Abigail' }) => {
     console.log(currentVillager)
     const villagerImage = (
         <img
-            className="navimg"
+            className="villager-pic"
             src={villagerData[currentVillager].picture}
             alt={currentVillager}
         />
