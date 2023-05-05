@@ -1,38 +1,71 @@
+import Abigail from '../src/assets/images/villagers/abigail.png';
+import Alex from '../src/assets/images/villagers/alex.png';
+import Caroline from '../src/assets/images/villagers/caroline.png';
+import Clint from '../src/assets/images/villagers/clint.png';
+import Demetrius from '../src/assets/images/villagers/demetrius.png';
+import Dwarf from '../src/assets/images/villagers/dwarf.png';
+import Elliott from '../src/assets/images/villagers/elliott.png';
+import Emily from '../src/assets/images/villagers/emily.png';
+import Evelyn from '../src/assets/images/villagers/evelyn.png';
+import George from '../src/assets/images/villagers/george.png';
+import Gus from '../src/assets/images/villagers/gus.png';
+import Haley from '../src/assets/images/villagers/haley.png';
+import Harvey from '../src/assets/images/villagers/harvey.png';
+import Jas from '../src/assets/images/villagers/jas.png';
+import Jodi from '../src/assets/images/villagers/jodi.png';
+import Kent from '../src/assets/images/villagers/kent.png';
+import Krobus from '../src/assets/images/villagers/krobus.png';
+import Leah from '../src/assets/images/villagers/leah.png';
+import Lewis from '../src/assets/images/villagers/lewis.png';
+import Linus from '../src/assets/images/villagers/linus.png';
+import Marnie from '../src/assets/images/villagers/marnie.png';
+import Maru from '../src/assets/images/villagers/maru.png';
+import Pam from '../src/assets/images/villagers/pam.png';
+import Penny from '../src/assets/images/villagers/penny.png';
+import Pierre from '../src/assets/images/villagers/pierre.png';
+import Robin from '../src/assets/images/villagers/robin.png';
+import Sam from '../src/assets/images/villagers/sam.png';
+import Sandy from '../src/assets/images/villagers/sandy.png';
+import Sebastian from '../src/assets/images/villagers/sebastian.png';
+import Shane from '../src/assets/images/villagers/shane.png';
+import Vincent from '../src/assets/images/villagers/vincent.png';
+import Willy from '../src/assets/images/villagers/willy.png';
+import Wizard from '../src/assets/images/villagers/wizard.png';
 import CalendarFlag from '../src/assets/images/calendar/calendar-flag.png';
 import CalendarStar from '../src/assets/images/calendar/calendar-star.png';
-import CalendarVincent from '../src/assets/images/calendar/calendar-vincent.png';
-import CalendarCaroline from '../src/assets/images/calendar/calendar-vincent.png';
-import CalendarKent from '../src/assets/images/calendar/calendar-kent.png';
-import CalendarLewis from '../src/assets/images/calendar/calendar-lewis.png';
-import CalendarHaley from '../src/assets/images/calendar/calendar-haley.png';
-import CalendarPam from '../src/assets/images/calendar/calendar-pam.png';
-import CalendarShane from '../src/assets/images/calendar/calendar-shane.png';
-import CalendarPierre from '../src/assets/images/calendar/calendar-pierre.png';
-import CalendarEmily from '../src/assets/images/calendar/calendar-emily.png';
-import CalendarJas from '../src/assets/images/calendar/calendar-jas.png';
-import CalendarGus from '../src/assets/images/calendar/calendar-gus.png';
-import CalendarMaru from '../src/assets/images/calendar/calendar-maru.png';
+import CalendarAbigail from '../src/assets/images/calendar/calendar-abigail.png';
 import CalendarAlex from '../src/assets/images/calendar/calendar-alex.png';
-import CalendarSam from '../src/assets/images/calendar/calendar-sam.png';
+import CalendarCaroline from '../src/assets/images/calendar/calendar-vincent.png';
+import CalendarClint from '../src/assets/images/calendar/calendar-clint.png';
 import CalendarDemetrius from '../src/assets/images/calendar/calendar-demetrius.png';
 import CalendarDwarf from '../src/assets/images/calendar/calendar-dwarf.png';
-import CalendarWilly from '../src/assets/images/calendar/calendar-willy.png';
-import CalendarPenny from '../src/assets/images/calendar/calendar-penny.png';
 import CalendarElliott from '../src/assets/images/calendar/calendar-elliott.png';
-import CalendarJodi from '../src/assets/images/calendar/calendar-jodi.png';
-import CalendarAbigail from '../src/assets/images/calendar/calendar-abigail.png';
-import CalendarSandy from '../src/assets/images/calendar/calendar-sandy.png';
-import CalendarMarnie from '../src/assets/images/calendar/calendar-marnie.png';
-import CalendarRobin from '../src/assets/images/calendar/calendar-robin.png';
-import CalendarGeorge from '../src/assets/images/calendar/calendar-george.png';
-import CalendarKrobus from '../src/assets/images/calendar/calendar-krobus.png';
-import CalendarLinus from '../src/assets/images/calendar/calendar-linus.png';
-import CalendarSebastian from '../src/assets/images/calendar/calendar-sebastian.png';
-import CalendarHarvey from '../src/assets/images/calendar/calendar-harvey.png';
-import CalendarWizard from '../src/assets/images/calendar/calendar-wizard.png';
+import CalendarEmily from '../src/assets/images/calendar/calendar-emily.png';
 import CalendarEvelyn from '../src/assets/images/calendar/calendar-evelyn.png';
+import CalendarGeorge from '../src/assets/images/calendar/calendar-george.png';
+import CalendarGus from '../src/assets/images/calendar/calendar-gus.png';
+import CalendarHaley from '../src/assets/images/calendar/calendar-haley.png';
+import CalendarHarvey from '../src/assets/images/calendar/calendar-harvey.png';
+import CalendarJas from '../src/assets/images/calendar/calendar-jas.png';
+import CalendarJodi from '../src/assets/images/calendar/calendar-jodi.png';
+import CalendarKent from '../src/assets/images/calendar/calendar-kent.png';
+import CalendarKrobus from '../src/assets/images/calendar/calendar-krobus.png';
 import CalendarLeah from '../src/assets/images/calendar/calendar-leah.png';
-import CalendarClint from '../src/assets/images/calendar/calendar-clint.png';
+import CalendarLewis from '../src/assets/images/calendar/calendar-lewis.png';
+import CalendarLinus from '../src/assets/images/calendar/calendar-linus.png';
+import CalendarMarnie from '../src/assets/images/calendar/calendar-marnie.png';
+import CalendarMaru from '../src/assets/images/calendar/calendar-maru.png';
+import CalendarPam from '../src/assets/images/calendar/calendar-pam.png';
+import CalendarPenny from '../src/assets/images/calendar/calendar-penny.png';
+import CalendarPierre from '../src/assets/images/calendar/calendar-pierre.png';
+import CalendarRobin from '../src/assets/images/calendar/calendar-robin.png';
+import CalendarSam from '../src/assets/images/calendar/calendar-sam.png';
+import CalendarSandy from '../src/assets/images/calendar/calendar-sandy.png';
+import CalendarSebastian from '../src/assets/images/calendar/calendar-sebastian.png';
+import CalendarShane from '../src/assets/images/calendar/calendar-shane.png';
+import CalendarVincent from '../src/assets/images/calendar/calendar-vincent.png';
+import CalendarWilly from '../src/assets/images/calendar/calendar-willy.png';
+import CalendarWizard from '../src/assets/images/calendar/calendar-wizard.png';
 
 export const getSeasonalData = ({ season }) => {
     const seasonalData = {
@@ -92,82 +125,13 @@ export const getSeasonalData = ({ season }) => {
 };
 
 export const villagerData = {
-    Kent: {
+    Abigail: {
         birthday: {
-            season: 'spring',
-            day: 4,
+            season: 'fall',
+            day: 13,
         },
-        calendarSprite: CalendarKent,
-    },
-    Lewis: {
-        birthday: {
-            season: 'spring',
-            day: 7,
-        },
-        calendarSprite: CalendarLewis,
-    },
-    Vincent: {
-        birthday: {
-            season: 'spring',
-            day: 10,
-        },
-        calendarSprite: CalendarVincent,
-    },
-    Haley: {
-        birthday: {
-            season: 'spring',
-            day: 14,
-        },
-        calendarSprite: CalendarHaley,
-    },
-    Pam: {
-        birthday: {
-            season: 'spring',
-            day: 18,
-        },
-        calendarSprite: CalendarPam,
-    },
-    Shane: {
-        birthday: {
-            season: 'spring',
-            day: 20,
-        },
-        calendarSprite: CalendarShane,
-    },
-    Pierre: {
-        birthday: {
-            season: 'spring',
-            day: 26,
-        },
-        calendarSprite: CalendarPierre,
-    },
-    Emily: {
-        birthday: {
-            season: 'spring',
-            day: 27,
-        },
-        calendarSprite: CalendarEmily,
-    },
-    Jas: {
-        birthday: {
-            season: 'summer',
-            day: 4,
-        },
-        calendarSprite: CalendarJas,
-    },
-    Gus: {
-        birthday: {
-            season: 'summer',
-            day: 8,
-        },
-        calendarSprite: CalendarGus,
-    },
-    Maru: {
-        birthday: {
-            season: 'summer',
-            day: 10,
-        },
-        calendarSprite: CalendarMaru,
+        calendarSprite: CalendarAbigail,
+        picture: Abigail
     },
     Alex: {
         birthday: {
@@ -175,13 +139,19 @@ export const villagerData = {
             day: 13,
         },
         calendarSprite: CalendarAlex,
+        picture: Alex
     },
-    Sam: {
-        birthday: {
-            season: 'summer',
-            day: 17,
-        },
-        calendarSprite: CalendarSam,
+    Caroline: {
+        season: 'winter',
+        day: 7,
+        calendarSprite: CalendarCaroline,
+        picture: Caroline
+    },
+    Clint: {
+        season: 'winter',
+        day: 26,
+        calendarSprite: CalendarClint,
+        picture: Clint
     },
     Demetrius: {
         birthday: {
@@ -189,6 +159,7 @@ export const villagerData = {
             day: 19,
         },
         calendarSprite: CalendarDemetrius,
+        picture: Demetrius
     },
     Dwarf: {
         birthday: {
@@ -196,20 +167,7 @@ export const villagerData = {
             day: 22,
         },
         calendarSprite: CalendarDwarf,
-    },
-    Willy: {
-        birthday: {
-            season: 'summer',
-            day: 24,
-        },
-        calendarSprite: CalendarWilly,
-    },
-    Penny: {
-        birthday: {
-            season: 'fall',
-            day: 2,
-        },
-        calendarSprite: CalendarPenny,
+        picture: Dwarf
     },
     Elliott: {
         birthday: {
@@ -217,6 +175,57 @@ export const villagerData = {
             day: 5,
         },
         calendarSprite: CalendarElliott,
+        picture: Elliott
+    },
+    Emily: {
+        birthday: {
+            season: 'spring',
+            day: 27,
+        },
+        calendarSprite: CalendarEmily,
+        picture: Emily
+    },
+    Evelyn: {
+        season: 'winter',
+        day: 20,
+        calendarSprite: CalendarEvelyn,
+        picture: Evelyn
+    },
+    George: {
+        season: 'fall',
+        day: 24,
+        calendarSprite: CalendarGeorge,
+        picture: George
+    },
+    Gus: {
+        birthday: {
+            season: 'summer',
+            day: 8,
+        },
+        calendarSprite: CalendarGus,
+        picture: Gus
+    },
+    Haley: {
+        birthday: {
+            season: 'spring',
+            day: 14,
+        },
+        calendarSprite: CalendarHaley,
+        picture: Haley
+    },
+    Harvey: {
+        season: 'winter',
+        day: 14,
+        calendarSprite: CalendarHarvey,
+        picture: Harvey
+    },
+    Jas: {
+        birthday: {
+            season: 'summer',
+            day: 4,
+        },
+        calendarSprite: CalendarJas,
+        picture: Jas
     },
     Jodi: {
         birthday: {
@@ -224,13 +233,93 @@ export const villagerData = {
             day: 11,
         },
         calendarSprite: CalendarJodi,
+        picture: Jodi
     },
-    Abigail: {
+    Kent: {
+        birthday: {
+            season: 'spring',
+            day: 4,
+        },
+        calendarSprite: CalendarKent,
+        picture: Kent
+    },
+    Krobus: {
+        season: 'winter',
+        day: 1,
+        calendarSprite: CalendarKrobus,
+        picture: Krobus
+    },
+    Leah: {
+        season: 'winter',
+        day: 23,
+        calendarSprite: CalendarLeah,
+        picture: Leah
+    },
+    Lewis: {
+        birthday: {
+            season: 'spring',
+            day: 7,
+        },
+        calendarSprite: CalendarLewis,
+        picture: Lewis
+    },
+    Linus: {
+        season: 'winter',
+        day: 3,
+        calendarSprite: CalendarLinus,
+        picture: Linus
+    },
+    Marnie: {
+        season: 'fall',
+        day: 18,
+        calendarSprite: CalendarMarnie,
+        picture: Marnie
+    },
+    Maru: {
+        birthday: {
+            season: 'summer',
+            day: 10,
+        },
+        calendarSprite: CalendarMaru,
+        picture: Maru
+    },
+    Pam: {
+        birthday: {
+            season: 'spring',
+            day: 18,
+        },
+        calendarSprite: CalendarPam,
+        picture: Pam
+    },
+    Penny: {
         birthday: {
             season: 'fall',
-            day: 13,
+            day: 2,
         },
-        calendarSprite: CalendarAbigail,
+        calendarSprite: CalendarPenny,
+        picture: Penny
+    },
+    Pierre: {
+        birthday: {
+            season: 'spring',
+            day: 26,
+        },
+        calendarSprite: CalendarPierre,
+        picture: Pierre
+    },
+    Robin: {
+        season: 'fall',
+        day: 21,
+        calendarSprite: CalendarRobin,
+        picture: Robin
+    },
+    Sam: {
+        birthday: {
+            season: 'summer',
+            day: 17,
+        },
+        calendarSprite: CalendarSam,
+        picture: Sam
     },
     Sandy: {
         birthday: {
@@ -238,66 +327,43 @@ export const villagerData = {
             day: 15,
         },
         calendarSprite: CalendarSandy,
-    },
-    Marnie: {
-        season: 'fall',
-        day: 18,
-        calendarSprite: CalendarMarnie,
-    },
-    Robin: {
-        season: 'fall',
-        day: 21,
-        calendarSprite: CalendarRobin,
-    },
-    George: {
-        season: 'fall',
-        day: 24,
-        calendarSprite: CalendarGeorge,
-    },
-    Krobus: {
-        season: 'winter',
-        day: 1,
-        calendarSprite: CalendarKrobus,
-    },
-    Linus: {
-        season: 'winter',
-        day: 3,
-        calendarSprite: CalendarLinus,
-    },
-    Caroline: {
-        season: 'winter',
-        day: 7,
-        calendarSprite: CalendarCaroline,
+        picture: Sandy
     },
     Sebastian: {
         season: 'winter',
         day: 10,
         calendarSprite: CalendarSebastian,
+        picture: Sebastian
     },
-    Harvey: {
-        season: 'winter',
-        day: 14,
-        calendarSprite: CalendarHarvey,
+    Shane: {
+        birthday: {
+            season: 'spring',
+            day: 20,
+        },
+        calendarSprite: CalendarShane,
+        picture: Shane
+    },
+    Vincent: {
+        birthday: {
+            season: 'spring',
+            day: 10,
+        },
+        calendarSprite: CalendarVincent,
+        picture: Vincent
+    },
+    Willy: {
+        birthday: {
+            season: 'summer',
+            day: 24,
+        },
+        calendarSprite: CalendarWilly,
+        picture: Willy
     },
     Wizard: {
         season: 'winter',
         day: 17,
         calendarSprite: CalendarWizard,
-    },
-    Evelyn: {
-        season: 'winter',
-        day: 20,
-        calendarSprite: CalendarEvelyn,
-    },
-    Leah: {
-        season: 'winter',
-        day: 23,
-        calendarSprite: CalendarLeah,
-    },
-    Clint: {
-        season: 'winter',
-        day: 26,
-        calendarSprite: CalendarClint,
+        picture: Wizard
     },
 };
 
