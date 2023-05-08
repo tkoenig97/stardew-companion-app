@@ -170,3 +170,14 @@
     display: block;
     box-sizing: border-box;
 }
+
+.panel-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hearts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
