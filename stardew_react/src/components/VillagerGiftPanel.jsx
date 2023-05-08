@@ -9,7 +9,9 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
     useEffect(() => {
         setHearts(
             villagerData[currentVillager].marriage
-                ? new Array(8).fill('greyed').concat(new Array(2).fill('locked'))
+                ? new Array(8)
+                      .fill('greyed')
+                      .concat(new Array(2).fill('locked'))
                 : new Array(10).fill('greyed')
         );
     }, [currentVillager]);
@@ -22,7 +24,15 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
         />
     );
 
-    const handleHeartChange = () => {
+    const handleHeartChange = (index) => {
+        const newHearts = [...hearts];
+        if (newHearts[index] === 'locked') return;
+        if (heartClicked) {
+            newHearts[index] = 'greyed';
+        } else {
+            newHearts[index] = 'heart';
+        }
+        setHearts(newHearts);
         setHeartClicked(!heartClicked);
     };
 
@@ -37,10 +47,12 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
                         {hearts.map((heart, index) => (
                             <img
                                 key={index}
-                                onClick={handleHeartChange}
+                                onClick={() => handleHeartChange(index)}
                                 src={
                                     heart === 'locked'
                                         ? 'src/assets/images/locked-heart.png'
+                                        : heart === "heart"
+                                        ? 'src/assets/images/heart.png'
                                         : 'src/assets/images/greyed-heart.png'
                                 }
                             />
