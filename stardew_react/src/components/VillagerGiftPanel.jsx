@@ -42,11 +42,12 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
             <div className="panel-content">
                 {villagerImage}
                 <div>
-                    <div className="hearts">
+                    <div className="relationship">
                         <h2>Relationship:</h2>
                         {hearts.map((heart, index) => (
                             <img
                                 key={index}
+                                className='heart'
                                 onClick={() => handleHeartChange(index)}
                                 src={
                                     heart === 'locked'

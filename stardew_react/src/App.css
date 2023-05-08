@@ -177,9 +177,13 @@
     justify-content: space-evenly;
 }
 
-.hearts {
+.relationship {
     display: flex;
     align-items: center;
+}
+
+.heart {
+    padding: 1%;
 }
 
 .gift-lists {
@@ -191,6 +195,7 @@
 .gift-list {
     border: 2px solid #63453a;
     border-radius: 1em;
+    margin-top: 50px;
 }
 
 .list-header {
