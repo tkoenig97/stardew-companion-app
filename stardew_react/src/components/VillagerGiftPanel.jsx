@@ -21,10 +21,19 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
                         <h2>Relationship:</h2>
                         <img src="src/assets/images/heart.png" />
                     </div>
-                    <h2>Marriageable: X</h2>
+                    <h2>
+                        Marriageable:
+                        {villagerData[currentVillager].marriage ? (
+                            <span
+                                dangerouslySetInnerHTML={{ __html: ' &#x2713;' }}
+                            ></span>
+                        ) : (
+                            ' X'
+                        )}
+                    </h2>
                 </div>
             </div>
-            <div className='gift-lists'>
+            <div className="gift-lists">
                 <GiftList emotion="Loves" />
                 <GiftList emotion="Likes" />
                 <GiftList emotion="Hates" />
