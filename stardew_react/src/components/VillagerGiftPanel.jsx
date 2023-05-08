@@ -60,7 +60,7 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
                         ))}
                     </div>
                     <h2>
-                        Marriageable:
+                        Marriable:
                         {villagerData[currentVillager].marriage ? (
                             <span
                                 dangerouslySetInnerHTML={{
