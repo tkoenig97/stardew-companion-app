@@ -63,6 +63,8 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
             <div className="gift-lists">
                 <GiftList emotion="Loves" />
                 <GiftList emotion="Likes" />
+                <GiftList emotion="Neutral" />
+                <GiftList emotion="Dislikes" />
                 <GiftList emotion="Hates" />
             </div>
         </div>
