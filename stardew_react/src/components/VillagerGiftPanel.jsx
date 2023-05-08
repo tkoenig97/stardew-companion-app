@@ -4,6 +4,11 @@ import { GiftList } from './GiftList';
 
 export const VillagerGiftPanel = ({ currentVillager }) => {
     const [heartClicked, setHeartClicked] = useState();
+    const [hearts, setHearts] = useState(
+        villagerData[currentVillager].marriage
+            ? new Array(8).fill('greyed').concat(new Array(2).fill('locked'))
+            : new Array(10).fill('greyed')
+    );
     const villagerImage = (
         <img
             className="villager-pic"
@@ -24,14 +29,17 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
                 <div>
                     <div className="hearts">
                         <h2>Relationship:</h2>
-                        <img
-                            onClick={handleHeartChange}
-                            src={
-                                heartClicked
-                                    ? 'src/assets/images/heart.png'
-                                    : "src/assets/images/greyed-heart.png"
-                            }
-                        />
+                        {hearts.map((heart, index) => (
+                            <img
+                                key={index}
+                                onClick={handleHeartChange}
+                                src={
+                                    heart === 'locked'
+                                        ? 'src/assets/images/locked-heart.png'
+                                        : 'src/assets/images/greyed-heart.png'
+                                }
+                            />
+                        ))}
                     </div>
                     <h2>
                         Marriageable:
