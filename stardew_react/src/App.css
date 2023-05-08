@@ -163,6 +163,7 @@
 /* NpcGiftPanel.jsx */
 .gift-panel {
     position: relative;
+    text-align: center;
 }
 
 .villager-pic {
@@ -180,4 +181,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.gift-lists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* GiftList.jsx */
+.gift-list {
+    border: 2px solid #63453a;
+    border-radius: 1em;
+}
+
+.list-header {
+    border-bottom: 2px solid #63453a;
+    line-height: 0;
 }

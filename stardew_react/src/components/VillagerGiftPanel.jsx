@@ -1,6 +1,7 @@
 import { villagerData } from '../utilities';
+import { GiftList } from './GiftList';
 
-export const VillagerGiftPanel = ({ currentVillager = 'Abigail' }) => {
+export const VillagerGiftPanel = ({ currentVillager }) => {
     console.log(currentVillager);
     const villagerImage = (
         <img
@@ -22,6 +23,11 @@ export const VillagerGiftPanel = ({ currentVillager = 'Abigail' }) => {
                     </div>
                     <h2>Marriageable: X</h2>
                 </div>
+            </div>
+            <div className='gift-lists'>
+                <GiftList emotion="Loves" />
+                <GiftList emotion="Likes" />
+                <GiftList emotion="Hates" />
             </div>
         </div>
     );
