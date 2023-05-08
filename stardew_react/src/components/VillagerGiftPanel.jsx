@@ -1,14 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { villagerData } from '../utilities';
 import { GiftList } from './GiftList';
 
 export const VillagerGiftPanel = ({ currentVillager }) => {
     const [heartClicked, setHeartClicked] = useState();
-    const [hearts, setHearts] = useState(
-        villagerData[currentVillager].marriage
-            ? new Array(8).fill('greyed').concat(new Array(2).fill('locked'))
-            : new Array(10).fill('greyed')
-    );
+    const [hearts, setHearts] = useState([]);
+
+    useEffect(() => {
+        setHearts(
+            villagerData[currentVillager].marriage
+                ? new Array(8).fill('greyed').concat(new Array(2).fill('locked'))
+                : new Array(10).fill('greyed')
+        );
+    }, [currentVillager]);
+
     const villagerImage = (
         <img
             className="villager-pic"
