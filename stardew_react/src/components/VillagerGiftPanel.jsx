@@ -47,12 +47,12 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
                         {hearts.map((heart, index) => (
                             <img
                                 key={index}
-                                className='heart'
+                                className="heart"
                                 onClick={() => handleHeartChange(index)}
                                 src={
                                     heart === 'locked'
                                         ? 'src/assets/images/locked-heart.png'
-                                        : heart === "heart"
+                                        : heart === 'heart'
                                         ? 'src/assets/images/heart.png'
                                         : 'src/assets/images/greyed-heart.png'
                                 }

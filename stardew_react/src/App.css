@@ -184,6 +184,7 @@
 
 .heart {
     padding: 1%;
+    cursor: pointer;
 }
 
 .gift-lists {
