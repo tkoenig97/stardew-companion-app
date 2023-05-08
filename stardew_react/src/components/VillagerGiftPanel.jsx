@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import { villagerData } from '../utilities';
 import { GiftList } from './GiftList';
 
 export const VillagerGiftPanel = ({ currentVillager }) => {
-    console.log(currentVillager);
+    const [heartClicked, setHeartClicked] = useState();
     const villagerImage = (
         <img
             className="villager-pic"
@@ -10,6 +11,10 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
             alt={currentVillager}
         />
     );
+
+    const handleHeartChange = () => {
+        setHeartClicked(!heartClicked);
+    };
 
     return (
         <div className="gift-panel">
@@ -19,13 +24,22 @@ export const VillagerGiftPanel = ({ currentVillager }) => {
                 <div>
                     <div className="hearts">
                         <h2>Relationship:</h2>
-                        <img src="src/assets/images/heart.png" />
+                        <img
+                            onClick={handleHeartChange}
+                            src={
+                                heartClicked
+                                    ? 'src/assets/images/heart.png'
+                                    : "src/assets/images/greyed-heart.png"
+                            }
+                        />
                     </div>
                     <h2>
                         Marriageable:
                         {villagerData[currentVillager].marriage ? (
                             <span
-                                dangerouslySetInnerHTML={{ __html: ' &#x2713;' }}
+                                dangerouslySetInnerHTML={{
+                                    __html: ' &#x2713;',
+                                }}
                             ></span>
                         ) : (
                             ' X'
