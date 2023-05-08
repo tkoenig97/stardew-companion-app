@@ -131,7 +131,8 @@ export const villagerData = {
             day: 13,
         },
         calendarSprite: CalendarAbigail,
-        picture: Abigail
+        picture: Abigail,
+        marriage: true,
     },
     Alex: {
         birthday: {
@@ -139,19 +140,26 @@ export const villagerData = {
             day: 13,
         },
         calendarSprite: CalendarAlex,
-        picture: Alex
+        picture: Alex,
+        marriage: true,
     },
     Caroline: {
-        season: 'winter',
-        day: 7,
+        birthday: {
+            season: 'winter',
+            day: 7,
+        },
         calendarSprite: CalendarCaroline,
-        picture: Caroline
+        picture: Caroline,
+        marriage: false,
     },
     Clint: {
-        season: 'winter',
-        day: 26,
+        birthday: {
+            season: 'winter',
+            day: 26,
+        },
         calendarSprite: CalendarClint,
-        picture: Clint
+        picture: Clint,
+        marriage: false,
     },
     Demetrius: {
         birthday: {
@@ -159,7 +167,8 @@ export const villagerData = {
             day: 19,
         },
         calendarSprite: CalendarDemetrius,
-        picture: Demetrius
+        picture: Demetrius,
+        marriage: false,
     },
     Dwarf: {
         birthday: {
@@ -167,7 +176,8 @@ export const villagerData = {
             day: 22,
         },
         calendarSprite: CalendarDwarf,
-        picture: Dwarf
+        picture: Dwarf,
+        marriage: false,
     },
     Elliott: {
         birthday: {
@@ -175,7 +185,8 @@ export const villagerData = {
             day: 5,
         },
         calendarSprite: CalendarElliott,
-        picture: Elliott
+        picture: Elliott,
+        marriage: true,
     },
     Emily: {
         birthday: {
@@ -183,19 +194,26 @@ export const villagerData = {
             day: 27,
         },
         calendarSprite: CalendarEmily,
-        picture: Emily
+        picture: Emily,
+        marriage: true,
     },
     Evelyn: {
-        season: 'winter',
-        day: 20,
+        birthday: {
+            season: 'winter',
+            day: 20,
+        },
         calendarSprite: CalendarEvelyn,
-        picture: Evelyn
+        picture: Evelyn,
+        marriage: false,
     },
     George: {
-        season: 'fall',
-        day: 24,
+        birthday: {
+            season: 'fall',
+            day: 24,
+        },
         calendarSprite: CalendarGeorge,
-        picture: George
+        picture: George,
+        marriage: false,
     },
     Gus: {
         birthday: {
@@ -203,7 +221,8 @@ export const villagerData = {
             day: 8,
         },
         calendarSprite: CalendarGus,
-        picture: Gus
+        picture: Gus,
+        marriage: false,
     },
     Haley: {
         birthday: {
@@ -211,13 +230,17 @@ export const villagerData = {
             day: 14,
         },
         calendarSprite: CalendarHaley,
-        picture: Haley
+        picture: Haley,
+        marriage: true,
     },
     Harvey: {
-        season: 'winter',
-        day: 14,
+        birthday: {
+            season: 'winter',
+            day: 14,
+        },
         calendarSprite: CalendarHarvey,
-        picture: Harvey
+        picture: Harvey,
+        marriage: true,
     },
     Jas: {
         birthday: {
@@ -225,7 +248,8 @@ export const villagerData = {
             day: 4,
         },
         calendarSprite: CalendarJas,
-        picture: Jas
+        picture: Jas,
+        marriage: false,
     },
     Jodi: {
         birthday: {
@@ -233,7 +257,8 @@ export const villagerData = {
             day: 11,
         },
         calendarSprite: CalendarJodi,
-        picture: Jodi
+        picture: Jodi,
+        marriage: false,
     },
     Kent: {
         birthday: {
@@ -241,19 +266,26 @@ export const villagerData = {
             day: 4,
         },
         calendarSprite: CalendarKent,
-        picture: Kent
+        picture: Kent,
+        marriage: false,
     },
     Krobus: {
-        season: 'winter',
-        day: 1,
+        birthday: {
+            season: 'winter',
+            day: 1,
+        },
         calendarSprite: CalendarKrobus,
-        picture: Krobus
+        picture: Krobus,
+        marriage: false,
     },
     Leah: {
-        season: 'winter',
-        day: 23,
+        birthday: {
+            season: 'winter',
+            day: 23,
+        },
         calendarSprite: CalendarLeah,
-        picture: Leah
+        picture: Leah,
+        marriage: true,
     },
     Lewis: {
         birthday: {
@@ -261,19 +293,26 @@ export const villagerData = {
             day: 7,
         },
         calendarSprite: CalendarLewis,
-        picture: Lewis
+        picture: Lewis,
+        marriage: false,
     },
     Linus: {
-        season: 'winter',
-        day: 3,
+        birthday: {
+            season: 'winter',
+            day: 3,
+        },
         calendarSprite: CalendarLinus,
-        picture: Linus
+        picture: Linus,
+        marriage: false,
     },
     Marnie: {
-        season: 'fall',
-        day: 18,
+        birthday: {
+            season: 'fall',
+            day: 18,
+        },
         calendarSprite: CalendarMarnie,
-        picture: Marnie
+        picture: Marnie,
+        marriage: false,
     },
     Maru: {
         birthday: {
@@ -281,7 +320,8 @@ export const villagerData = {
             day: 10,
         },
         calendarSprite: CalendarMaru,
-        picture: Maru
+        picture: Maru,
+        marriage: true,
     },
     Pam: {
         birthday: {
@@ -289,7 +329,8 @@ export const villagerData = {
             day: 18,
         },
         calendarSprite: CalendarPam,
-        picture: Pam
+        picture: Pam,
+        marriage: false,
     },
     Penny: {
         birthday: {
@@ -297,7 +338,8 @@ export const villagerData = {
             day: 2,
         },
         calendarSprite: CalendarPenny,
-        picture: Penny
+        picture: Penny,
+        marriage: true,
     },
     Pierre: {
         birthday: {
@@ -305,13 +347,17 @@ export const villagerData = {
             day: 26,
         },
         calendarSprite: CalendarPierre,
-        picture: Pierre
+        picture: Pierre,
+        marriage: false,
     },
     Robin: {
-        season: 'fall',
-        day: 21,
+        birthday: {
+            season: 'fall',
+            day: 21,
+        },
         calendarSprite: CalendarRobin,
-        picture: Robin
+        picture: Robin,
+        marriage: false,
     },
     Sam: {
         birthday: {
@@ -319,7 +365,8 @@ export const villagerData = {
             day: 17,
         },
         calendarSprite: CalendarSam,
-        picture: Sam
+        picture: Sam,
+        marriage: true,
     },
     Sandy: {
         birthday: {
@@ -327,13 +374,15 @@ export const villagerData = {
             day: 15,
         },
         calendarSprite: CalendarSandy,
-        picture: Sandy
+        picture: Sandy,
+        marriage: false,
     },
     Sebastian: {
         season: 'winter',
         day: 10,
         calendarSprite: CalendarSebastian,
-        picture: Sebastian
+        picture: Sebastian,
+        marriage: true,
     },
     Shane: {
         birthday: {
@@ -341,7 +390,8 @@ export const villagerData = {
             day: 20,
         },
         calendarSprite: CalendarShane,
-        picture: Shane
+        picture: Shane,
+        marriage: true,
     },
     Vincent: {
         birthday: {
@@ -349,7 +399,8 @@ export const villagerData = {
             day: 10,
         },
         calendarSprite: CalendarVincent,
-        picture: Vincent
+        picture: Vincent,
+        marriage: false,
     },
     Willy: {
         birthday: {
@@ -357,13 +408,17 @@ export const villagerData = {
             day: 24,
         },
         calendarSprite: CalendarWilly,
-        picture: Willy
+        picture: Willy,
+        marriage: false,
     },
     Wizard: {
-        season: 'winter',
-        day: 17,
+        birthday: {
+            season: 'winter',
+            day: 17,
+        },
         calendarSprite: CalendarWizard,
-        picture: Wizard
+        picture: Wizard,
+        marriage: false,
     },
 };
 
