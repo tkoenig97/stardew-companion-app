@@ -19,6 +19,10 @@ export const SignUp = () => {
                     onSubmit={(e) => [
                         e.preventDefault(),
                         signUp(firstName, lastName, email, password),
+                        setFirstName(''),
+                        setLastName(''),
+                        setEmail(''),
+                        setPassword(''),
                     ]}
                     className="signup"
                 >
