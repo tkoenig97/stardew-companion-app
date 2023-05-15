@@ -9,7 +9,8 @@ from django.core.serializers import serialize
 def user_sign_up(request):
     email = request.data['email']
     password = request.data['password']
-    name = request.data['name']
+    first_name = request.data['firstName']
+    last_name = request.data['lastName']
     super_user = False
     staff = False
     if 'super' in request.data:
@@ -18,7 +19,7 @@ def user_sign_up(request):
         staff = request.data['staff']
     try:
         # creates new user
-        new_user = App_User.objects.create_user(username = email, email = email, name = name, password = password, is_superuser = super_user, is_staff = staff)
+        new_user = App_User.objects.create_user(username = email, email = email, first_name = first_name, last_name = last_name, password = password, is_superuser = super_user, is_staff = staff)
         new_user.save()
         return JsonResponse({"success":True})
     except Exception as e:

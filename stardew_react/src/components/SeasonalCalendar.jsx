@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import { DayCell } from './DayCell';
-import { getSeasonalData } from '../utilities';
-import { capitalizeFirstLetter } from '../utilities';
+import { getSeasonalData } from '../utils/utilities';
+import { capitalizeFirstLetter } from '../utils/utilities';
 
 export const SeasonalCalendar = () => {
     const seasons = ['spring', 'summer', 'fall', 'winter'];
