@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { signUp } from '../utils/userUtils';
 
 export const SignUp = () => {
     const [firstName, setFirstName] = useState('');
@@ -14,7 +15,13 @@ export const SignUp = () => {
         <div className="menu page-content">
             <div>
                 <h1>Sign Up:</h1>
-                <form className="signup">
+                <form
+                    onSubmit={(e) => [
+                        e.preventDefault(),
+                        signUp(firstName, lastName, email, password),
+                    ]}
+                    className="signup"
+                >
                     <input
                         placeholder="First Name"
                         value={firstName}
