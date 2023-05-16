@@ -37,7 +37,7 @@ def user_log_in(request):
             # Creates SessionID
             login(request._request, user)
             print(user)
-            return JsonResponse({'email': user.email, 'name':user.name})
+            return JsonResponse({'email': user.email, 'name':user.first_name})
         except Exception as e:
             print(e)
             return JsonResponse({'login':False})
