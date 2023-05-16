@@ -16,7 +16,23 @@ export const logIn = async (email, password) => {
         password: password,
     });
     console.log(response.data.login);
-    return response.data.login;
+    if (response.data.login) {
+        return response.data.user;
+    } else {
+        return null;
+    }
+};
+
+export const currUser = async () => {
+    let response = await axios.get('/curruser/');
+    console.log(response.data);
+    return response.data;
+};
+
+export const logOut = async (setUser) => {
+    let response = await axios.post('/logout/');
+    setUser(null);
+    return response.data.logout;
 };
 
 export const getToken = () => {

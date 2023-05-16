@@ -1,18 +1,21 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { logIn } from '../utils/userUtils';
+import { UserContext } from '../App';
 
 export const LogIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const { setUser } = useContext(UserContext);
 
     return (
         <div>
             <h1>Log In:</h1>
-            <form className='signup'
-                onSubmit={(e) => [
+            <form
+                className="signup"
+                onSubmit={async(e) => [
                     e.preventDefault(),
-                    logIn(email, password),
+                    setUser(await logIn(email, password)),
                     setEmail(''),
                     setPassword(''),
                 ]}

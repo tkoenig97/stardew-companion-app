@@ -37,7 +37,8 @@ def user_log_in(request):
             # Creates SessionID
             login(request._request, user)
             print(user)
-            return JsonResponse({'email': user.email, 'name':user.first_name})
+            return JsonResponse({'user':{
+                'email': user.email, 'name':user.first_name}, 'login': True})
         except Exception as e:
             print(e)
             return JsonResponse({'login':False})
@@ -46,7 +47,6 @@ def user_log_in(request):
 
 @api_view(["GET"])
 def curr_user(request):
-
     if request.user.is_authenticated:
         #                    format       query                     options
         user_info = serialize("json",  [request.user], fields = ['name', 'email'])
