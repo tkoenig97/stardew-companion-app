@@ -18,7 +18,7 @@ export const logIn = async (email, password, navigate) => {
     });
     console.log(response.data.login);
     if (response.data.login) {
-        navigate('/profile')
+        navigate('/profile');
         return response.data.user;
     } else {
         return null;
@@ -27,6 +27,7 @@ export const logIn = async (email, password, navigate) => {
 
 export const currUser = async () => {
     let response = await axios.get('/curruser/');
+    setUser(response.data);
     console.log(response.data);
     return response.data;
 };
@@ -34,7 +35,7 @@ export const currUser = async () => {
 export const logOut = async (setUser, navigate) => {
     let response = await axios.post('/logout/');
     setUser(null);
-    navigate('/login')
+    navigate('/signin');
     return response.data.logout;
 };
 
