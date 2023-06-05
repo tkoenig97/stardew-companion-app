@@ -8,7 +8,6 @@ export const UserContext = createContext(null);
 
 function App() {
     const [user, setUser] = useState(null);
-    const isAuthenticated = !!user
 
     getToken();
 
@@ -21,7 +20,7 @@ function App() {
 
     return (
         <div className="app">
-            <Navbar isAuthenticated={isAuthenticated}/>
+            <Navbar user={user}/>
             <UserContext.Provider value={{ user, setUser }}>
                 <Outlet />
             </UserContext.Provider>

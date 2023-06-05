@@ -31,9 +31,10 @@ export const currUser = async () => {
     return response.data;
 };
 
-export const logOut = async (setUser) => {
+export const logOut = async (setUser, navigate) => {
     let response = await axios.post('/logout/');
     setUser(null);
+    navigate('/login')
     return response.data.logout;
 };
 

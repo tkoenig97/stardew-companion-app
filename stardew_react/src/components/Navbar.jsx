@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const Navbar = ({ isAuthenticated }) => {
+export const Navbar = ( { user }) => {
     return (
         <div className="menu navbar">
             <Link to={'/'}>
@@ -66,7 +66,7 @@ export const Navbar = ({ isAuthenticated }) => {
                     <h2 className="nav-label">Bundles</h2>
                 </div>
             </Link>
-            {isAuthenticated ? (
+            {user ? (
                 <Link to={'/profile'}>
                     <div className="nav-link">
                         <img
