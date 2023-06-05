@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const Navbar = () => {
+export const Navbar = ({ isAuthenticated }) => {
     return (
         <div className="menu navbar">
             <Link to={'/'}>
@@ -21,13 +21,15 @@ export const Navbar = () => {
                     <h2 className="nav-label">Calendar</h2>
                 </div>
             </Link>
-            <Link to={'/gifts'}><div className="nav-link">
+            <Link to={'/gifts'}>
+                <div className="nav-link">
                     <img
                         className="navimg"
                         src="src/assets/images/brown-chicken.png"
                     />
                     <h2 className="nav-label">NPC Gifts</h2>
-                </div></Link>
+                </div>
+            </Link>
             <Link to={'/farming'}>
                 <div className="nav-link">
                     <img
@@ -64,13 +66,27 @@ export const Navbar = () => {
                     <h2 className="nav-label">Bundles</h2>
                 </div>
             </Link>
-            <Link to={'/signin'}><div className="nav-link">
-                    <img
-                        className="navimg"
-                        src="src/assets/images/brown-chicken.png"
-                    />
-                    <h2 className="nav-label">Sign-In</h2>
-                </div></Link>
+            {isAuthenticated ? (
+                <Link to={'/profile'}>
+                    <div className="nav-link">
+                        <img
+                            className="navimg"
+                            src="src/assets/images/brown-chicken.png"
+                        />
+                        <h2 className="nav-label">Profile</h2>
+                    </div>
+                </Link>
+            ) : (
+                <Link to="/signin">
+                    <div className="nav-link">
+                        <img
+                            className="navimg"
+                            src="src/assets/images/brown-chicken.png"
+                        />
+                        <h2 className="nav-label">Sign-In</h2>
+                    </div>
+                </Link>
+            )}
             <form>
                 <input name="search" placeholder="Search"></input>
                 <button className="submit-button" type="submit">
@@ -80,4 +96,3 @@ export const Navbar = () => {
         </div>
     );
 };
-

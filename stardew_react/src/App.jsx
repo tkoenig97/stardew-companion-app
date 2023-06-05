@@ -8,6 +8,7 @@ export const UserContext = createContext(null);
 
 function App() {
     const [user, setUser] = useState(null);
+    const isAuthenticated = !!user
 
     getToken();
 
@@ -18,13 +19,9 @@ function App() {
         getCurrUser();
     }, []);
 
-    useEffect(() => {
-      console.log(user)
-    }, [user])
-
     return (
         <div className="app">
-            <Navbar />
+            <Navbar isAuthenticated={isAuthenticated}/>
             <UserContext.Provider value={{ user, setUser }}>
                 <h1>Hello {user && user.email}</h1>
                 <button onClick={() => logOut(setUser)}>Log Out</button>
