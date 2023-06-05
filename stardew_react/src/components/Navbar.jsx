@@ -83,7 +83,7 @@ export const Navbar = ( { user }) => {
                             className="navimg"
                             src="src/assets/images/brown-chicken.png"
                         />
-                        <h2 className="nav-label">Sign-In</h2>
+                        <h2 className="nav-label">Log-In</h2>
                     </div>
                 </Link>
             )}
