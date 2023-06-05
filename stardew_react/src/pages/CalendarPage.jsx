@@ -1,4 +1,4 @@
-import { SeasonalCalendar } from '../components/SeasonalCalendar';
+import { SeasonalCalendar } from '../components/calendar/SeasonalCalendar';
 
 export const CalendarPage = () => {
     return (

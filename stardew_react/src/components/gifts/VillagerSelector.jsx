@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { villagerData } from '../utils/utilities';
+import { villagerData } from '../../utils/utilities';
 import { VillagerGiftPanel } from './VillagerGiftPanel';
 
 export const VillagerSelector = () => {
