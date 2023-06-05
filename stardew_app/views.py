@@ -38,7 +38,7 @@ def user_log_in(request):
             login(request._request, user)
             print(user)
             return JsonResponse({'user':{
-                'email': user.email, 'name':user.first_name}, 'login': True})
+                'email': user.email, 'first_name':user.first_name, 'last_name':user.last_name}, 'login': True})
         except Exception as e:
             print(e)
             return JsonResponse({'login':False})
