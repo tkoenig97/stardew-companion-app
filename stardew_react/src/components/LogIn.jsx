@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { logIn } from '../utils/userUtils';
 import { UserContext } from '../App';
 
@@ -7,6 +7,7 @@ export const LogIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const { setUser } = useContext(UserContext);
+    const navigate = useNavigate()
 
     return (
         <div>
@@ -15,7 +16,7 @@ export const LogIn = () => {
                 className="signup"
                 onSubmit={async(e) => [
                     e.preventDefault(),
-                    setUser(await logIn(email, password)),
+                    setUser(await logIn(email, password, navigate)),
                     setEmail(''),
                     setPassword(''),
                 ]}

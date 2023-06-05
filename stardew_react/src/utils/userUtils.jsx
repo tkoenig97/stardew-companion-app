@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export const signUp = async (firstName, lastName, email, password) => {
     let response = await axios.post('/signup/', {
@@ -10,13 +11,14 @@ export const signUp = async (firstName, lastName, email, password) => {
     return response.data.success;
 };
 
-export const logIn = async (email, password) => {
+export const logIn = async (email, password, navigate) => {
     let response = await axios.post('/login/', {
         email: email,
         password: password,
     });
     console.log(response.data.login);
     if (response.data.login) {
+        navigate('/profile')
         return response.data.user;
     } else {
         return null;
