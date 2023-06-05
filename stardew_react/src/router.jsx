@@ -9,6 +9,7 @@ import { BundlePage } from './pages/BundlePage';
 import { RecipePage } from './pages/RecipePage';
 import { LivestockPage } from './pages/LivestockPage';
 import { FarmingPage } from './pages/FarmingPage';
+import { ProfilePage } from './pages/ProfilePage';
 
 const Router = createBrowserRouter([
     {
@@ -50,6 +51,10 @@ const Router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUpPage />,
+            },
+            {
+                path: '/profile',
+                element: <ProfilePage />,
             },
         ],
     },
